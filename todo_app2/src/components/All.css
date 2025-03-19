@@ -1,0 +1,212 @@
+/* General Styles for Parent Container */
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f5f5f5; /* Light gray background */
+    border: 1px solid #dcdcdc; /* Subtle border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .parent-container h1 {
+    color: #333333; /* Dark gray for text */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Styles for Child1 Component */
+  .child1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #054e9c; /* Blue border */
+    border-radius: 8px;
+    background-color: #ffffff; /* White background */
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .child1-container h2 {
+    margin-bottom: 15px;
+    color: #007bff; /* Blue heading */
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .child1-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .child1-container input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .child1-container input[type="text"]:focus {
+    border-color: #007bff; /* Blue focus border */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow */
+  }
+  
+  .child1-container button {
+    padding: 10px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .child1-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Styles for Child2 Component */
+  .child2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #28a745; /* Green border */
+    border-radius: 8px;
+    background-color: #ffffff; /* White background */
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .child2-container h2 {
+    margin-bottom: 15px;
+    color: #28a745; /* Green heading */
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .child2-container ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .child2-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f9fa; /* Light gray background for list items */
+  }
+  
+  .child2-container li:nth-child(odd) {
+    background-color: #e9ecef; /* Slightly darker gray for alternating rows */
+  }
+  
+  .child2-container button {
+    padding: 5px 10px;
+    background-color: #dc3545; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .child2-container button:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  .status_delete{
+    display: flex; 
+    gap: 10px; 
+    align-items: center;
+
+  }
+
+  .completed {
+    text-decoration: line-through; /* Add line-through for completed items */
+    color: gray; /* Optional: Change color for completed items */
+  }
+  
+  .pending {
+    text-decoration: none; /* No line-through for pending items */
+    color: black; /* Optional: Default color for pending items */
+  }
+/* Black theme */
+.theame-color-black {
+  background-color: #1b2330; /* Black background */
+  color: white; /* White text */
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 1s ease, color 1s ease; /* Smooth transition over 1 second */
+}
+
+/* White theme */
+.theame-color-white {
+  background-color: #ffffff; /* White background */
+  color: black; /* Black text */
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 1s ease, color 1s ease; /* Smooth transition over 1 second */
+}
+
+
+/* Parent container styles for white theme */
+.parent-white {
+  background-color: #f9f9f9; /* Light gray background */
+  color: black; /* Black text */
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Parent container styles for WhatsApp green theme */
+.parent-green {
+  background-color: #116466; /* WhatsApp green background */
+  color: rgb(2, 2, 2); /* White text */
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.parent-green h1{
+  color :rgb(2, 2, 2);
+}
+
+.center-button {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-bottom: 6.67px; /* Add space between the button and the parent container */
+}
+
+.center-button button:hover {
+  background-color: #b3d3f5; /* Darker blue on hover */
+}
+
+.center-button button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
